@@ -18,6 +18,29 @@ prompt library built from your own questions.
 
 ### 1.
 
+what should we do next? 
+are you connected to the MCP of Miro
+
 ### 2.
 
+generate an image
+
 ### 3.
+
+connect with Miro via MCP
+
+### 4.
+
+using the mcp of miro
+fill out the service design blueprint with everything you know from the company&#x20;
+[https://miro.com/app/board/uXjVEUy5VSs=/?moveToWidget=3458764594879213347&cot=14](https://miro.com/app/board/uXjVEUy5VSs=/?moveToWidget=3458764594879213347\&cot=14)
+
+### 5.
+
+[@Miro](plugin://app-6a392799cb58819185f82dc01ac13dad@openai-curated-remote) help me visualize my codebase in a technical diagram
+
+### 6.
+
+using the mcp of miro\
+fill out the service design blueprint with everything you know from the company \
+[https://miro.com/app/board/uXjVEUy5VSs=/?moveToWidget=3458764594879213347&cot=14](https://miro.com/app/board/uXjVEUy5VSs=/?moveToWidget=3458764594879213347\&cot=14)
