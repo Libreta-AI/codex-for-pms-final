@@ -24,6 +24,13 @@ prompt library built from your own questions.
 
 ### 1.
 
+i want to learn how this project it is build in github
+can you give me an structure so i can use it in my other projects for other companies in claude 
+
 ### 2.
 
+dale as instrucciones a claude para que lo haga para mi empresa
+
 ### 3.
+
+what is this project about? what is inside the wiki?

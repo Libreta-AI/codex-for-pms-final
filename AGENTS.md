@@ -59,3 +59,7 @@ Sources: wiki **Company** → About Rook, Dispatch, Supply, Glossary, Team direc
 - Routing ranks all available candidates; capability match is a weighted score, not an exclusion in the excerpt. Reconcile this with the wiki's coverage-gap definition; do not assume production behaves identically.
 - Availability/device functions are stubs and history is in memory; production persistence, assignment and engaged-state updates are not shown.
 - Miro now connected: service blueprint and separate technical diagram completed on board `uXjVEUy5VSs=`. Blueprint distinguishes wiki, handover, code and proposed questions; causes and September recovery remain unverified.
+
+- The repository is a PM learning workspace: reference material, module prompts, instructions and workflows; it is not a complete application.
+- Generic Claude Code migration templates are in `templates/company-project/`; they contain no Rook facts and should be copied into a separate company workspace.
+- Company wiki and handover were reviewed; customer research and operational ping trends have not been investigated in this chat.
