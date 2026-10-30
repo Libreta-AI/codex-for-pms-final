@@ -63,3 +63,9 @@ Sources: wiki **Company** → About Rook, Dispatch, Supply, Glossary, Team direc
 - The repository is a PM learning workspace: reference material, module prompts, instructions and workflows; it is not a complete application.
 - Generic Claude Code migration templates are in `templates/company-project/`; they contain no Rook facts and should be copied into a separate company workspace.
 - Company wiki and handover were reviewed; customer research and operational ping trends have not been investigated in this chat.
+- Module 2 reviewed all four Research interviews (2–5 September) and all 147 support tickets (29 June–7 September); operational ping logs remain untested in this session.
+- Ticket volume: 40 through 11 August (44 days, 0.91/day), 2 on 12 August, 105 from 13 August–7 September (26 days, 4.04/day); filing dates do not establish incident timing or release causation.
+- Affinity counts overlap: quiet/uneven workload 32 tickets from four filers, offers moving on 16 from eleven; #3110 and #3140 occur in both (30 quiet-only tickets). Quiet phones, notification delivery and disappearing offers remain separate symptoms.
+- Interviews emphasize handler alerts (3/4 versus 2 tickets), small text (2/4 versus 2 tickets) and Kip's dark-mode priority; tickets additionally surface profiles/availability (9), access/performance (8) and Supply fulfillment (8), absent as interview complaint themes.
+- Halloran reports improved maintenance while six tickets raise timing/visibility problems; filters have 14 concern tickets plus two thank-yous. Repeated reports and four interviews cannot establish prevalence or severity.
+- Miro affinity map on https://miro.com/app/board/uXjVEUy5VSs=/ has 22 clusters, 172 evidence cards, period rates, synthesis, Top 5 summary (widget 3458764688898778045) and interview/ticket comparison (3458764688899265007); existing diagrams preserved. Validate symptoms against ping logs before attributing causes.

@@ -16,6 +16,23 @@ prompt library built from your own questions.
 
 ### 1.
 
+Write down the mark down prompt same as in the image
+
 ### 2.
 
+using the Miro MCP can you do an affinity mapping 
+first create the prompt before runnign it
+
 ### 3.
+
+can you include top 5 clusters?on the right side
+first create the prompt
+
+### 4.
+
+where is this cluster?
+**Few or no pings** — quiet stretches and uncertainty about whether accounts work
+
+### 5.
+
+include this in the Miro
