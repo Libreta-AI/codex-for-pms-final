@@ -1,0 +1,26 @@
+const test=require('node:test');
+const assert=require('node:assert/strict');
+const fs=require('node:fs');
+const vm=require('node:vm');
+const path=require('node:path');
+test('UI preserves language/filter state and exports exactly the evidence shown',async()=>{
+ const handlers={},app={innerHTML:''},storage=new Map();let exported;
+ const context=vm.createContext({Intl,Date,Map,Set,Blob,URL:{createObjectURL:b=>{exported=b;return 'blob:test';},revokeObjectURL(){}},setTimeout(){},navigator:{language:'en'},localStorage:{getItem:k=>storage.get(k),setItem:(k,v)=>storage.set(k,v)},window:{scrollTo(){}},document:{documentElement:{},activeElement:null,getElementById:id=>id==='app'?app:null,querySelector:()=>null,querySelectorAll:()=>[],createElement:()=>({click(){}}),addEventListener:(type,fn)=>handlers[type]=fn}});
+ for(const file of ['data.js','metrics.js','support.js','app.js'])vm.runInContext(fs.readFileSync(path.join(__dirname,'../dist',file),'utf8'),context);
+ const click=data=>handlers.click({target:{closest:()=>({dataset:data})}});
+ const change=(id,value)=>handlers.change({target:{id,value,dataset:{}}});
+ assert.match(app.innerHTML,/68\.45%/);
+ change('preset','date');assert.match(app.innerHTML,/63\.99%/);
+ click({action:'lang',lang:'es'});assert.match(app.innerHTML,/63,99 %/);assert.equal(context.document.documentElement.lang,'es');
+ click({action:'view',view:'evidence'});assert.match(app.innerHTML,/159 filas observadas/);
+ click({action:'export'});const all=await exported.text();assert.equal(all.trim().split('\n').length,160);
+ change('week','2026-08-31');assert.match(app.innerHTML,/15 filas observadas/);click({action:'export'});const spanish=await exported.text();
+ click({action:'lang',lang:'en'});assert.match(app.innerHTML,/15 observed responder-week rows/);click({action:'export'});assert.equal(await exported.text(),spanish);
+ const lines=spanish.trim().split('\n');assert.equal(lines.length,16);assert.equal(lines.slice(1).reduce((sum,l)=>sum+Number(l.split(',')[2].replaceAll('"','')),0),165);
+ click({action:'view',view:'responders'});assert.match(app.innerHTML,/Farlight · 31 Aug: 0 pings; acceptance Not applicable · derived zero/);
+ click({action:'detail',name:'Farlight'});click({action:'week',week:'2026-08-24'});assert.match(app.innerHTML,/1 observed responder-week rows/);assert.doesNotMatch(app.innerHTML,/role="dialog"/);
+ click({action:'reset'});click({action:'view',view:'research'});assert.match(app.innerHTML,/#3073/);assert.match(app.innerHTML,/6 pings reported in seven days; 6 recorded/);
+ change('start','2026-09-07');change('end','2026-09-08');click({action:'view',view:'overview'});assert.match(app.innerHTML,/No data in this selection/);assert.doesNotMatch(app.innerHTML,/class="metric-number"/);
+ click({action:'reset'});click({action:'lang',lang:'es'});vm.runInContext(fs.readFileSync(path.join(__dirname,'../dist/app.js'),'utf8'),context);assert.equal(context.document.documentElement.lang,'es');
+ assert.equal(context.ROOK_SUPPORT.tickets.length,147);
+});

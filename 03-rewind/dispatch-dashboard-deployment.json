@@ -1,0 +1,14 @@
+{
+  "title": "Rook · Dispatch Observatory",
+  "url": "https://rook-dispatch-observatory.brenda-plinck.chatgpt.site",
+  "audience": "owner-private",
+  "status": "succeeded",
+  "project_id": "appgprj_6aea852e740c81919fe4cc0dd56e2810",
+  "deployment_id": "appgdep_6aea899e30248191af5eba74c487ec5a",
+  "version_id": "appgprj_6aea852e740c81919fe4cc0dd56e2810~appgver_58edb16a42508191aeb595f3d6653d89",
+  "commit_sha": "ee4d9ec61cf61292629f595c48aab8ae17db98b2",
+  "course_source_backup": "dispatch-dashboard-source",
+  "data_coverage": "2026-06-29 through 2026-09-06",
+  "ticket_coverage": "2026-06-29 through 2026-09-07",
+  "languages": ["en", "es"]
+}
