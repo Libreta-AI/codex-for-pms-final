@@ -1,1 +1,5 @@
 .DS_Store
+
+# Sites keeps a separate source repository; the readable course copy is tracked.
+/02-super-hearing/ceo-dashboard/
+/02-super-hearing/rook-ceo-deploy.tar.gz

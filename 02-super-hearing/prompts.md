@@ -36,3 +36,15 @@ where is this cluster?
 ### 5.
 
 include this in the Miro
+
+### 6.
+
+i would like to do a dashboard for my CEO to take decisions based on the data
+
+### 7.
+
+explain me in 3 sentences what this dashboard is showing 
+
+### 8.
+
+include this dahboard in the Miro as an embeded .html
