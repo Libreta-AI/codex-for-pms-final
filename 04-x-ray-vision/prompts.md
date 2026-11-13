@@ -44,3 +44,7 @@ fill out the service design blueprint with everything you know from the company&
 using the mcp of miro\
 fill out the service design blueprint with everything you know from the company \
 [https://miro.com/app/board/uXjVEUy5VSs=/?moveToWidget=3458764594879213347&cot=14](https://miro.com/app/board/uXjVEUy5VSs=/?moveToWidget=3458764594879213347\&cot=14)
+
+### 7.
+
+que estamos leyendo ahora 

@@ -77,3 +77,8 @@ Sources: wiki **Company** → About Rook, Dispatch, Supply, Glossary, Team direc
 - Tickets #3073 and #3086 match their stated seven-day ping counts; #3060 and #3070 claim three quiet days despite two recorded pings each in the preceding 72 hours. Incident-level ticket links and explanations remain unconfirmed.
 - Ironvale received 23 → 33 pings and missed 1 → 6 in the matched windows; tickets #3052 and #3065 describe offers disappearing, while #3034 reported unreliable notifications before 4.2. Candidate matching pings are not confirmed incident links.
 - A bilingual internal diagnostic dashboard is privately published at https://rook-dispatch-observatory.brenda-plinck.chatgpt.site; its course backup is `03-rewind/dispatch-dashboard-source/`. The PRD and reproducible analyses are in `03-rewind/`; it uses a fixed historical snapshot, not live reporting.
+
+- Module 4 traced incident offers through availability, ranking and phone-offer code; incident entry is outside this folder, and device delivery remains a stub.
+- The only implemented way to increase an existing history score is accepting an offer; becoming available or waiting does not restore points. The 2019 recovery TODO is a comment, not implemented behavior.
+- Marcus's 14 August question is partly answered: the same 4.2 ranking weights apply to all available candidates, including those who previously declined. Whether this was an explicit product decision remains unanswered on the release page.
+- 4.2 reduced history's weight from 0.40 to 0.25 and increased proximity from 0.45 to 0.60; it did not document a new or larger decline penalty. A timeout/history feedback cycle remains a hypothesis requiring production traces.
