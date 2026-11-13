@@ -82,3 +82,9 @@ Sources: wiki **Company** → About Rook, Dispatch, Supply, Glossary, Team direc
 - The only implemented way to increase an existing history score is accepting an offer; becoming available or waiting does not restore points. The 2019 recovery TODO is a comment, not implemented behavior.
 - Marcus's 14 August question is partly answered: the same 4.2 ranking weights apply to all available candidates, including those who previously declined. Whether this was an explicit product decision remains unanswered on the release page.
 - 4.2 reduced history's weight from 0.40 to 0.25 and increased proximity from 0.45 to 0.60; it did not document a new or larger decline penalty. A timeout/history feedback cycle remains a hypothesis requiring production traces.
+
+- Module 5 reviewed Helen's `05-super-speed/director-request.txt`, Dispatch's wiki, the 4.2 comments, Kip's interview and Priya's handover. Helen wants a user-visible experience, not just a routing setting change.
+- `05-super-speed/brief.md` preserves the gap analysis as written; it is not a finalized implementation brief. Quiet-period eligibility, recovery rules, user-facing states and measurable acceptance criteria remain open.
+- `05-super-speed/prototype.html` is a standalone local prototype pairing Kip's coverage console with Meteor Mite's phone: review → readiness request → confirmation → simulated offer → taken, turned down or missed; defer and reset also work.
+- The prototype's sample counts, verified-ranking explanation and temporary neutral history contribution are proposed scenario assumptions, not production findings or approved policy; thresholds, duration, repeat use and outcome effects need Helen and Wen's agreement.
+- Prototype JavaScript syntax and simulated interaction checks passed; visual browser verification was not performed. Both Module 5 build files are present.

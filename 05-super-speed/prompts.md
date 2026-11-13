@@ -15,6 +15,9 @@ prompt library built from your own questions.
 
 ### 1.
 
+Class 5
+**Use the Director's request, Rook's wiki and your predecessor's note. Then ask three questions to find what the first draft is still missing.**
+
 ### 2.
 
 ### 3.
