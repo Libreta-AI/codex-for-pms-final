@@ -15,6 +15,10 @@ prompt library built from your own questions.
 
 ### 1.
 
+what is this for as an example, explain
+also
+what sidekicks mean (explain in spanish) i need to understadn if it is related to the sidekicks they mention in Miro
+
 ### 2.
 
 ### 3.

@@ -88,3 +88,8 @@ Sources: wiki **Company** → About Rook, Dispatch, Supply, Glossary, Team direc
 - `05-super-speed/prototype.html` is a standalone local prototype pairing Kip's coverage console with Meteor Mite's phone: review → readiness request → confirmation → simulated offer → taken, turned down or missed; defer and reset also work.
 - The prototype's sample counts, verified-ranking explanation and temporary neutral history contribution are proposed scenario assumptions, not production findings or approved policy; thresholds, duration, repeat use and outcome effects need Helen and Wen's agreement.
 - Prototype JavaScript syntax and simulated interaction checks passed; visual browser verification was not performed. Both Module 5 build files are present.
+
+- Module 6 created `.agents/skills/review-checklist/SKILL.md` to review briefs for ownership, measurable success, consistent scope and problem-before-fix structure, with evidence and suggested fixes.
+- The Monday brief review automation is active for 9:00 a.m. America/Chicago in this chat/project; it reports findings without editing briefs. No immediate run was requested or performed.
+- The class screenshot's four flagged Rook briefs are an illustrative scheduled-run example, not verified findings from this project or its wiki.
+- “Sidekick” describes an assistant; Miro Sidekicks are Miro's own AI assistants. The local review skill and schedule do not automatically create or connect a Miro Sidekick.
